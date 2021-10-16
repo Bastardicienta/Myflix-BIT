@@ -1,0 +1,22 @@
+.movies-form-modal{
+    background-color: #3A3A3A;
+    border-radius: 20px;
+}
+
+.movie-form-title{
+    color: #FFFFFF;
+}
+
+.movies-form-btn button{
+    width: 100px;
+}
+
+.movies-form-input > div{
+    color: #838383;
+    width: 300px;
+    border-radius: 3px;
+}
+
+.movies-form-input > div > span{
+    color: #838383;
+}
