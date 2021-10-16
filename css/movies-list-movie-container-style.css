@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.list-add-container{
+    height: 250px;
+    width: 200px;
+    position: relative;
+    background-color: gray !important;
+    color: lightgray;
+    border-radius: 7%;
+}
+
+.list-text-container{
+    position: absolute;
+    top: 75%;
+    left: 25%;
+}
+
+.list-circle-container{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+.list-movie-img{
+    height: 250px;
+    width: 200px;
+    border-radius: 7%;
+    position: relative;
+}
+
+.list-stars-container{
+    position: absolute;
+    left: 85%;
+}
+
+#yellow-star{
+    color: yellow;
+}
+
+#gray-star{
+    color: lightgray;
+}
+
+.photo{
+    height: 250px;
+    width: 200px;
+    border-radius: 7%;
+}
