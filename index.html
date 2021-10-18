@@ -44,9 +44,9 @@
 
     <div id="movies-list" class="row align-items-center">
         <div id="movies-list-movie-container" class="col">
-            <div class="list-add-container">
+            <div class="list-add-container" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div class="list-circle-container">
-                    <i id="add-circle" class="fa-solid fa-circle-plus"></i>
+                    <i id="add-circle" class="fa-solid fa-circle-plus fa-3x"></i>
                 </div>
                 <div class="list-text-container">
                     <span class="list-add fs-3">Add new</span>
@@ -199,40 +199,38 @@
         </div>
     </div>
     <div id="movies-form">
-        
-        <button type="button" btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"
-            data-bs-whatever="@getbootstrap">OPEN</button>
-    </div>
-    
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content movies-form-modal">
-                <div class="modal-header justify-content-center">
-                    <h5 class="modal-title movie-form-title align-self-center" id="exampleModalLabel">Add New Movie</h5>
-                </div>
-                <div class="modal-body">
-                    <form class="movies-form-dates movies-form-input justify-content-center">
-                        <div class="input-group mb-3 ">
-                            <span class="input-group-text" id="inputGroup-sizing-default">Rating</span>
-                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content movies-form-modal">
+                        <div class="modal-header justify-content-center">
+                            <h5 class="modal-title movie-form-title align-self-center" id="exampleModalLabel">Add New Movie</h5>
                         </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
-                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        <div class="modal-body">
+                            <form class="movies-form-dates movies-form-input justify-content-center">
+                                <div class="input-group mb-3 ">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Rating</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Imagine</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                </div>
+                            </form>
                         </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="inputGroup-sizing-default">Imagine</span>
-                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        <div class="modal-footer movies-form-btn justify-content-center">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Add</button>
+                            <button type="button" class="btn btn-secondary">Cancel</button>
                         </div>
-                    </form>
-                </div>
-                <div class="modal-footer movies-form-btn justify-content-center">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Add</button>
-                    <button type="button" class="btn btn-secondary">Cancel</button>
+                    </div>
                 </div>
             </div>
-        </div>
     </div>
+    
+    
     <script src="js/main.js"></script>
 </body>
 
